@@ -1,0 +1,991 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #2c3671;
+  background: radial-gradient(
+    circle,
+    rgba(44, 54, 113, 1) 0%,
+    rgba(6, 11, 40, 1) 100%
+  );
+  /* background-color: #060b28; */
+}
+/* nav styling starts here */
+nav {
+  width: 80%;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+nav header {
+  display: flex;
+  width: 8%;
+  flex-direction: row;
+  align-items: center;
+}
+nav header img {
+  width: 25%;
+}
+ul {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav button {
+  background: none;
+  padding: 10px;
+  width: 8%;
+  border-radius: 20px;
+  border-width: 1px;
+  color: white;
+  border-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* nav styling ends here */
+/* sidenav styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background: rgb(29, 30, 87);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1000;
+  color: white;
+}
+
+.sidebar a {
+  margin: 15px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-buttons {
+  margin-top: auto;
+}
+
+.sidebar .register {
+  width: 100%;
+  height: 35px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.close-btn {
+  font-size: 28px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+div.hamburger{
+  display: none;
+}
+/* Prevent scrolling when sidebar is active */
+body.no-scroll {
+  overflow: hidden;
+}
+/* second section styling starts here */
+div.section1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  /* background: #2c3671;
+  background: radial-gradient(
+    circle,
+    rgba(44, 54, 113, 1) 0%,
+    rgba(6, 11, 40, 1) 100%
+  ); */
+  /* background-color: #060b28; */
+}
+.second-section {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.second-section div.text {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.second-section div.text h1 {
+  font-size: 3rem;
+}
+.second-section div.text p {
+  font-size: 1.5rem;
+}
+.second-section div.text button {
+  background: none;
+  width: 15%;
+  padding: 13px;
+  border-radius: 20px;
+  border-width: 1px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-color: white;
+}
+div.text div.group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+div.text div.group div.numbers {
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+div.second-section .text-image {
+  width: 50%;
+  height: auto;
+}
+.text-image img {
+  width: 100%;
+  height: 550px;
+}
+/* second section styling ends here */
+/* group chain styling starts here */
+.group-chains {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.group-chains .chains {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.chains .single {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 9%;
+  height: auto;
+}
+.single p {
+  font-size: 1.2em;
+}
+.single .round {
+  width: 32%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.single .round img {
+  width: 50%;
+  height: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+/* group styling ends here */
+/* leader and protocol styling starts here */
+div.section {
+  width: 100%;
+  height: auto;
+  background-color: #060b28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+div.leaders,
+div.protocol {
+  width: 80%;
+  height: 730px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+div.leaders div.leaderImage,
+div.protocol div.protocolImage {
+  width: 50%;
+  height: auto;
+}
+div.leaders div.leaderImage img,
+div.protocol div.protocolImage img {
+  width: 100%;
+  height: 690px;
+}
+div.leaders div.leaderText,
+div.protocol div.protocolText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+div.leaderText h1,
+div.protocolText h1 {
+  font-size: 3rem;
+}
+div.leaderText p,
+div.protocolText p {
+  font-size: 1.5rem;
+}
+div.leaderText button,
+div.protocolText button {
+  background: none;
+  width: 15%;
+  padding: 13px;
+  border-radius: 20px;
+  border-width: 1px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-color: white;
+}
+div.protocolText span {
+  font-size: 2.2rem;
+}
+/* leader and protocol styling ends here */
+/* third section styling starts here */
+div.section3 {
+  width: 100%;
+  height: auto;
+  background-color: #060b28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.cover {
+  height: 850px;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(31, 31, 23, 0.152);
+}
+div.thirdSection {
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+div.thirdSection div.ultimate {
+  width: 90%;
+  height: auto;
+  display: flex;
+}
+div.ultimate .card {
+  width: 25%;
+  /* height: 840px; */
+  height: auto;
+  border-left: 1px dashed rgba(203, 202, 202, 0.051);
+  border-right: 1px dashed rgba(203, 202, 202, 0.051);
+  padding-left: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+div.drop {
+  height: 460px;
+}
+.card .iconContainer {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card .iconContainer2 {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card .iconContainer img {
+  width: 75%;
+  height: 50px;
+}
+.card .iconContainer2 .tools {
+  width: 50%;
+  height: 35px;
+}
+.card span {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.card p {
+  font-size: 1.3rem;
+}
+div.ultimateText {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  position: absolute;
+  left: 5%;
+  padding-top: 50px;
+}
+div.ultimateText h1 {
+  font-size: 3rem;
+  width: 30%;
+}
+div.ultimateText p {
+  font-size: 1.5rem;
+  width: 40%;
+}
+div.ultimateText p span {
+  height: 50px;
+  display: block;
+}
+/* third section styling ends here */
+/* div.standard styling starts here */
+div.standard {
+  width: 70%;
+  height: 900px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  /* padding: 20px 0; */
+}
+div.standardText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+  width: 50%;
+}
+div.standardText h1 {
+  font-size: 3rem;
+}
+div.standardText p {
+  font-size: 1.3rem;
+}
+div.standardGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+div.standardGroup div.standardCards {
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+div.standardCards div.firstImage {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-self: flex-end;
+}
+div.firstImage img {
+  width: 100%;
+}
+div.standardCards div.secondImage {
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.standardCards div.secondImage3 {
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.secondImage .image3 {
+  width: 50%;
+  height: 15px;
+}
+.standardCards button {
+  background: none;
+  width: 25%;
+  padding: 13px;
+  border-radius: 20px;
+  border-width: 1px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-color: white;
+}
+.standardCards p {
+  width: 70%;
+}
+/* div.standard styling ends here */
+/* div.socials styling starts here */
+div.section4 {
+  width: 100%;
+  height: auto;
+  background-color: #060b28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 150px;
+}
+div.firstContainer {
+  width: 100%;
+  background-color: #2d356238;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.socials {
+  width: 80%;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  background-color: #2d356238;
+  padding: 80px 150px;
+}
+div.socialsText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+  width: 55%;
+  align-self: center;
+  justify-self: center;
+}
+div.socialsText h1 {
+  font-size: 3rem;
+}
+div.socialsText p {
+  font-size: 1.3rem;
+}
+div.socialGroup {
+  display: flex;
+  justify-content: space-between;
+}
+div.socialGroup div.groupCard {
+  width: 15%;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div.groupCard .socialIcon {
+  width: 15%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+div.socialIcon img {
+  width: 100%;
+  height: 32px;
+}
+/* div.socials styling ends here */
+/* div.newsletter styling starts here */
+div.newsletter {
+  width: 60%;
+  height: auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #2d356238;
+}
+div.newsletter h1 {
+  font-size: 3rem;
+}
+div.newsletter p {
+  font-size: 1.3rem;
+  width: 60%;
+  text-align: center;
+}
+div.newsletter form {
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.newsletter input {
+  background: none;
+  padding: 20px 15px;
+  border-radius: 30px;
+  width: 55%;
+  border: none;
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  background-color: #232a5077;
+}
+input::placeholder {
+  color: white;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+div.newsletter button {
+  background: none;
+  color: white;
+  padding: 20px 35px;
+  border: none;
+  background-color: blueviolet;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+}
+/* div.newsletter styling ends here */
+/* footer styling starts here */
+footer {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  /* row-gap: 30px; */
+  color: white;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer .cover2 {
+  width: 100%;
+  position: absolute;
+  height: 400px;
+  background-color: #181e3f18;
+}
+footer .footerText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+footer .footerText {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerText .firstText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 20%;
+}
+.firstText header {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+}
+header div.logo {
+  width: 15%;
+}
+header img {
+  width: 80%;
+  height: auto;
+}
+footer div.secondText {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+div.secondText .texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+div.secondText .texts span {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 10px;
+}
+div.secondText .texts span div.socialLogo {
+  width: 18%;
+  height: auto;
+}
+div.secondText .texts span div.socialLogo img {
+  width: 100%;
+}
+/* footer styling ends here */
+/* Media Query for responsiveness */
+@media screen and (max-width: 1280px) {
+  div.socials {
+    padding: 50px 0;
+    width: 100%;
+  }
+  div.socialGroup {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav,
+  .second-section,
+  div.section div.leaders,
+  div.section div.protocol,
+  div.thirdSection,
+  div.standard,
+  div.newsletter,
+  footer div.footerText {
+    width: 90%;
+  }
+  div.section div.leaders div.leaderImage img {
+    height: auto;
+  }
+  .second-section div.text button,
+  div.leaderText button,
+  div.protocolText button {
+    width: 30%;
+  }
+  .chains .single {
+    width: 15%;
+  }
+  div.ultimateText,
+  div.thirdSection div.ultimate {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  ul {
+    width: 55%;
+  }
+  nav button {
+    width: 15%;
+  }
+  .text-image img,
+  div.protocol div.protocolImage img,
+  .card .iconContainer img,
+  .card .iconContainer2 .tools,
+  div.socialIcon img {
+    height: auto;
+  }
+  .single p {
+    font-size: 0.8em;
+  }
+  .single .round {
+    width: 20%;
+  }
+  .single .round img {
+    width: 40%;
+    height: auto;
+  }
+  div.ultimateText h1 {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+  div.ultimateText p {
+    font-size: 1rem;
+    width: 45%;
+  }
+  div.cover {
+    height: 810px;
+  }
+  .card span {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  div.standardGroup div.standardCards {
+    width: 50%;
+  }
+  .standardCards button {
+    width: 40%;
+  }
+  div.standardCards div.secondImage3 img,
+  div.secondImage img {
+    height: auto;
+    width: 80%;
+  }
+  footer .footerText .firstText {
+    width: 30%;
+  }
+  footer div.secondText {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 830px) {
+  section nav header {
+    width: 15%;
+  }
+  nav button {
+    width: 20%;
+  }
+  .text-image img,
+  div.protocol div.protocolImage img,
+  .card .iconContainer img,
+  .card .iconContainer2 .tools,
+  div.socialIcon img {
+    height: auto;
+  }
+  .single p {
+    font-size: 0.9em;
+  }
+  .single .round {
+    width: 25%;
+  }
+  .single .round img {
+    width: 60%;
+    height: auto;
+  }
+  div.ultimateText p {
+    font-size: 1rem;
+    width: 45%;
+  }
+  div.ultimateText h1 {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+  div.cover {
+    height: 810px;
+  }
+  .card span {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  div.standardGroup div.standardCards {
+    width: 50%;
+  }
+  .standardCards button {
+    width: 40%;
+  }
+  div.standardCards div.secondImage3 img,
+  div.secondImage img {
+    height: auto;
+    width: 80%;
+  }
+  footer .footerText .firstText {
+    width: 30%;
+  }
+  footer div.secondText {
+    width: 65%;
+  }
+  div.section {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section nav header {
+    width: 15%;
+  }
+  nav button {
+    width: 20%;
+  }
+  .text-image {
+    display: none;
+  }
+  div.second-section div.text {
+    width: 100%;
+  }
+  div.section div.leaders {
+    flex-direction: column;
+    height: auto;
+  }
+  div.protocol {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  div.leaders div.leaderText,
+  div.leaders div.leaderImage,
+  div.protocol div.protocolText,
+  div.protocol div.protocolImage {
+    width: 100%;
+  }
+  .standardCards p {
+    width: 100%;
+  }
+  .standardCards button {
+    width: 60%;
+  }
+  div.standardText p,
+  div.socialsText p {
+    font-size: 1rem;
+  }
+  div.newsletter {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .group-chains .chains {
+    flex-wrap: wrap;
+  }
+  .chains .single {
+    width: 30%;
+  }
+  div.standardGroup div.standardCards {
+    width: 90%;
+  }
+  div.standardGroup {
+    flex-direction: column;
+  }
+  div.standard {
+    height: auto;
+  }
+  div.newsletter {
+    padding: 20px 0px;
+  }
+  div.newsletter h1 {
+    font-size: 1.5rem;
+  }
+  div.newsletter p {
+    font-size: 0.8rem;
+  }
+  div.newsletter input {
+    width: 65%;
+  }
+  div.newsletter button {
+    background: none;
+    color: white;
+    padding: 20px 0;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 70%;
+    width: 40%;
+  }
+  footer {
+    height: auto;
+    padding-bottom: 15px;
+  }
+  footer div.footerText {
+    width: 90%;
+  }
+  footer div.footerText {
+    flex-direction: column;
+  }
+  footer div.secondText,
+  footer .footerText .firstText {
+    width: 100%;
+  }
+  .firstText header {
+ width: 60%;
+}
+footer .cover2 {
+    height: 320px;
+    bottom: 0;
+}
+div.standardText h1 {
+    font-size: 1.8rem;
+}
+    div.standardText p {
+        font-size: 0.8rem;
+    }
+    div.hamburger{
+      display: block;
+    }
+    nav ul{
+      display: none;
+    }
+    nav button{
+      display: none;
+    }
+}
+@media screen and (max-width: 435px) {
+section div.section3, div.cover, div.thirdSection, div.ultimateText{
+  display: none;
+}
+    div.socialGroup {
+      flex-wrap: wrap;
+      row-gap: 25px;
+      column-gap: 2px;
+    }
+    div.socialGroup div.groupCard {
+    width: 25%;
+}
+    div.standard {
+        padding: 50px 0;
+    }
+    div.standardText {
+    width: 90%;
+}
+div.newsletter form {
+    width: 90%;
+}
+div.newsletter button {
+        width: 30%;
+    }
+
+div.secondText .texts {
+width: 50%;
+}
+footer div.secondText {
+flex-wrap: wrap;
+row-gap: 35px;
+}
+nav header img {
+    width: 50%;
+}
+}
